@@ -1,0 +1,10 @@
+name: machine-learning-env
+
+dependencies:
+  - ipython
+  - matplotlib
+  - pandas
+  - pip
+  - python
+  - scikit-learn
+  - matplotlib
