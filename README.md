@@ -5,10 +5,9 @@
 
 ## Table of Contents
 - [About/Abstract](#about)
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Authors](#authors)
 - [License](#license)
 
 ## About
@@ -50,5 +49,7 @@ contains two folders, original and modified
 - Where figures are saved throughout the notebook. All figures are displayed in the ipynb notebooks, and some exclusively so.
 
 
+## Authors
+This work was conducted by Cristian Swift (CristianSwift2@gmail.com) under the mentorship of François Ribalet1 and François Ribalet through the School of Oceanography, Univeristy of Washington, Seattle, USA
 
-
+## License
