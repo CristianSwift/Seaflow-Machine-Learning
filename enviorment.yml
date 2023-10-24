@@ -20,3 +20,4 @@ dependencies:
   - contextily
   - shapely.geometryf
   - plotly
+  - GitPython
