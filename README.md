@@ -37,10 +37,31 @@ Once installation is complete:
     conda activate machine-learning-env
     jupyter-notebook
 
+If you get an error 'command not found: jupyter-notebook', first install notebook support in conda:
+
+    conda install nb_conda
+
 ## Usage
 
 ### Python
 Workflow organized numerically from 00 to 05 detailing every step taken on my local machine to conduct this project. Folder 04 ddetails the steps taken to split, train, and test the population specific random forest models. 
+
+A note on directories:  these notebooks use git as a way to locate the nessecary files, but if you have these files 
+outside of a repository you will need to substitute your own directory paths.  
+
+- Notebook 00: run every cell as you go
+this whole notebook should be able to be ran without modification, but the query will take anywhere between /n
+5-30 minutes to run depending on your internet connection and write speed.  
+
+- Notebook 01: run every cell 
+
+- Notebook 02: run every cell
+
+- Notebook 03: run every cell
+
+- Notebook(s) 04: run each notebook in the '04_Populations-model-fitting' folder in order, starting with '01_model-preparation.ipynb'.  You may have to change the file directories on 02-05 to fit your system.  
+
+- Notebook 05: run every cell - this notebook will compare the random forest predictions to known cruise data.  
 
 ### RF_models
 Contains joblib files of the developed sklearn RandomForestRegressor() models for each plankton population.

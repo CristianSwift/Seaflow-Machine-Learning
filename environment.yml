@@ -8,16 +8,22 @@ dependencies:
   - python
   - scikit-learn
   - matplotlib
-  - pycmap
-  - os
+ 
   - numpy
-  - sklearn.ensemble
-  - sklearn.metrics
+
   - seaborn
   - joblib
-  - sklearn.model_selection
+  
   - geopandas
-  - contextily
-  - shapely.geometryf
+
+ 
   - plotly
   - GitPython
+  - pip:
+    - pycmap
+    - contextily
+    - sklearn.ensemble
+    - os
+    - sklearn.metrics
+    - sklearn.model_selection
+    - shapely.geometryf
