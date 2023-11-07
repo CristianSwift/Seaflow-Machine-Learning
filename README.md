@@ -26,6 +26,8 @@ Biomass Partitioning in the Eastern Pacific."
 
 
 ## Installation
+All of this has been installed on MacOS systems. Ubuntu/linux and Windows users may have a slightly different experience.  
+
 Jupyter notebooks, a web-based interactive computing platform, were used as an interface for python within a conda enviorment.
 
 A surest way to run these notebooks is use create a [conda](https://docs.conda.io/en/latest/) environment using the [environment.yml](https://github.com/CristianSwift/Seaflow-Machine-Learning/blob/MoreData/enviorment.yml) file for this repository. On your local machine:
@@ -35,7 +37,7 @@ A surest way to run these notebooks is use create a [conda](https://docs.conda.i
 Once installation is complete:
 
     conda activate machine-learning-env
-    jupyter-notebook
+    jupyter notebook
 
 If you get an error 'command not found: jupyter-notebook', first install notebook support in conda:
 
@@ -49,27 +51,31 @@ Workflow organized numerically from 00 to 05 detailing every step taken on my lo
 A note on directories:  these notebooks use git as a way to locate the nessecary files, but if you have these files 
 outside of a repository you will need to substitute your own directory paths.  
 
+If you pulled directly from the repository, you should have all the data already and you can skip notebooks 00-03, which are querying and ingesting the data.  
+
 - Notebook 00: run every cell as you go
-this whole notebook should be able to be ran without modification, but the query will take anywhere between /n
-5-30 minutes to run depending on your internet connection and write speed.  
+This whole notebook should be able to be ran without modification, but the query will take anywhere between 5-30 minutes to run depending on your internet connection and write speed.  This notebook queries data from Simons CMAP Darwin climatalogical data.  
 
 - Notebook 01: run every cell 
+this notebook ingests PAR data and combines the SeaFlow/CMAP data and the PAR cruise data into one file.  
 
 - Notebook 02: run every cell
+This notebook cleans up the combined data for use in the RF models.  
 
 - Notebook 03: run every cell
+This notebook lets us take a look at the data and make sure all the data types are functional for the RF models
 
 - Notebook(s) 04: run each notebook in the '04_Populations-model-fitting' folder in order, starting with '01_model-preparation.ipynb'.  You may have to change the file directories on 02-05 to fit your system.  
 
 - Notebook 05: run every cell - this notebook will compare the random forest predictions to known cruise data.  
 
 ### RF_models
-Contains joblib files of the developed sklearn RandomForestRegressor() models for each plankton population.
+Contains joblib files of the developed sklearn RandomForestRegressor() models for each plankton population.  These can be pulled from this folder into your own notebook.  
 
 ### data
 contains two folders, original and modified
 - original: all data loaded into python notebooks that have not been previously manipulated in this project, including Simon CMAP data queried in notebook 00_cmap-querys. 
-- modified: all data that has been previouslt manipulated in this project, usually are saved for intermidiate steps to get from one workflow to another.
+- modified: all data that has been previouslt manipulated in this project, usually saved for intermidiate steps to get from one workflow to another.  
 
 ### figures
 - Where figures are saved throughout the notebook. All figures are displayed in the ipynb notebooks, and some exclusively so.
