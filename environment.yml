@@ -10,7 +10,8 @@ dependencies:
   - pip == 23.3
   - python == 3.9.18
   - scipy == 1.11.3
-  - nb_conda == 2.2.1
+  - notebook < 7.0.0
+  - nb_conda
   - numpy == 1.26.0
   - seaborn == 0.12.2
   - joblib == 1.2.0
