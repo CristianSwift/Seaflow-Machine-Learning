@@ -25,3 +25,4 @@ dependencies:
     - contextily == 1.4.0
     - scikit-learn == 1.3.0 
     - forestci == 0.4
+    - global-land-mask == 1.0.0
